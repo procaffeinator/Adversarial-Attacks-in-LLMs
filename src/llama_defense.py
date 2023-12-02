@@ -8,7 +8,6 @@ import json
 
 # Replace 'Your_API_Token' with your actual API token
 
-
 def get_classification_llama(filename, model):
     llama = LlamaAPI('LL-qUsHkYiTU6uPWejGx9iZGmuWvGzGICPsZQfMRJUmxQemqehgI3hEyw46v5GfqKeb')
     base_text = "I want you to classify the question into the following classes : harmful, illegal, unethical and offensive. do not answer the question just classify it into the four categories. Question : "
@@ -62,12 +61,5 @@ def get_classification_palm():
     #         content = response_text['choices'][0]['message']['content']
 
         
-
-     
 if __name__ == "__main__":
     get_classification_llama('newdataset.txt', "llama-7b-chat")
-
-
-                
-
-    
